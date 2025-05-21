@@ -1,0 +1,49 @@
+
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true, // Changed from false to true
+    "allowSyntheticDefaultImports": true, 
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "index.tsx",
+    "App.tsx",
+    "types.ts",
+    "constants.ts",
+    "utils/gemini.ts",
+    "utils/dateUtils.ts",
+    "components/icons.tsx",
+    "components/Navbar.tsx",
+    "components/WordInputForm.tsx",
+    "components/WordList.tsx",
+    "components/QuizCard.tsx",
+    "components/ProgressDisplay.tsx",
+    "components/MatchMeaningGame.tsx",
+    "components/MatchForeignFromRussianGame.tsx",
+    "components/WordHuntingMode.tsx",
+    "components/common/AccordionItem.tsx",
+    "components/DeepDiveModal.tsx",
+    "components/HardcoreLearningSession.tsx",
+    "components/SettingsScreen.tsx"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
